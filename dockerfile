@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y vsftpd && apt-get install -y python3 &&
 RUN pip install PyJWT
 RUN pip install flask
 
+RUN apt-get install -y iputils-ping
+
 WORKDIR /app
 
 COPY . /app
