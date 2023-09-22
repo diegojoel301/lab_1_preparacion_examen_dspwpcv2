@@ -14,7 +14,7 @@ docker build -t lab_1_dspwpcv2 .
 docker rm lab_1_dspwpcv2_container
 docker rm client_lab_1_dspwpcv2_container
 
-docker run -p 80:80 -p 21:21--name lab_1_dspwpcv2_container -d -it lab_1_dspwpcv2
+docker run -p 5000:5000 -p 21:21--name lab_1_dspwpcv2_container -d -it lab_1_dspwpcv2
 
 docker exec -it lab_1_dspwpcv2_container service vsftpd restart
 
